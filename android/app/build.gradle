@@ -1,0 +1,45 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services' // Firebase plugin
+}
+
+android {
+    namespace 'com.quizzy.quizzyrewards'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.quizzy.quizzyrewards" // ✅ Corrected App ID
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+}
+
+dependencies {
+    // ✅ Firebase BoM to manage all Firebase SDK versions
+    implementation platform('com.google.firebase:firebase-bom:33.16.0')
+
+    // ✅ Example Firebase SDK: Analytics
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // 📝 Add more Firebase dependencies here as needed
+    // For example: Auth, Firestore, Messaging, etc.
+    // https://firebase.google.com/docs/android/setup#available-libraries
+}

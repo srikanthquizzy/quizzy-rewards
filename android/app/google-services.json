@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "771710622784",
+    "project_id": "quizzy-rewards",
+    "storage_bucket": "quizzy-rewards.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771710622784:android:e10722f8f0ffc1e49493a5",
+        "android_client_info": {
+          "package_name": "com.quizzy.quizzyrewards"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKy0kNxOMC0ZqOMIg0XJIaEpGDW-w2t68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
